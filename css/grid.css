@@ -1,0 +1,59 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+}
+
+.modal {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.content2 {
+  background: #fff;
+  margin-top: 80px;
+  width: 1000px;
+  padding: 20px;
+  border-radius: 3px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 50px) 1fr;
+  display: grid;
+  grid-gap: 20px;
+  margin: 20px auto;
+}
+
+.nome {
+  grid-column: 1 / 2;
+}
+
+.titulo {
+  grid-column: 1 / 2;
+}
+
+.adicionar {
+  grid-column: 2 / 3;
+  grid-row-start: 2;
+}
+
+.modal--show {
+  display: block;
+}
+
+.cpf {
+  grid-column: 2 / 3;
+  align-self: center;
+  text-align: end;
+}
